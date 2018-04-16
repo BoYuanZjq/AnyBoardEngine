@@ -80,7 +80,7 @@ Pod::Spec.new do |s|
   #  Supports git, hg, bzr, svn and HTTP.
   #
 
-  s.source       = { :git => "https://github.com/BoYuanZjq/AnyBoardEngine.git", :tag => "#{s.version}" }
+  s.source       = { :git => "https://github.com/BoYuanZjq/AnyBoardEngine.git", :tag => "#{s.version}" ,:commit => "2f55f755773219fed73a40ec91f24d708a582234"}
 
 
   # ――― Source Code ―――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――― #
@@ -91,10 +91,10 @@ Pod::Spec.new do |s|
   #  Not including the public_header_files will make all headers public.
   #
 
-  s.source_files  = "AnyBoardEngine", "AnyBoardEngine/**/*.h"
+  s.source_files  =  "AnyBoardEngine/**/*.{h,m}"
   #s.exclude_files = "Classes/Exclude"
 
-  # s.public_header_files = "Classes/**/*.h"
+  s.public_header_files = "AnyBoardEngine/**/*.{h}"
 
 
   # ――― Resources ―――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――― #
