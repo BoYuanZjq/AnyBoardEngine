@@ -80,7 +80,7 @@ Pod::Spec.new do |s|
   #  Supports git, hg, bzr, svn and HTTP.
   #
 
-  s.source       = { :git => "https://github.com/BoYuanZjq/AnyBoardEngine.git", :tag => "#{s.version}" ,:commit => "2f55f755773219fed73a40ec91f24d708a582234"}
+  s.source       = { :git => "https://github.com/BoYuanZjq/AnyBoardEngine.git", :tag => "#{s.version}" ,:commit => "62596ac8b7d193a315bb76b8735ba7927eed2d78"}
 
 
   # ――― Source Code ―――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――― #
