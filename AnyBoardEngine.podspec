@@ -16,7 +16,7 @@ Pod::Spec.new do |s|
   #
 
   s.name         = "AnyBoardEngine"
-  s.version      = "0.0.2"
+  s.version      = "0.0.3"
   s.summary      = "文档共享SDK,AnyBoardEngine."
 
   # This description is used to generate tags and improve search results.
@@ -138,6 +138,6 @@ Pod::Spec.new do |s|
   s.pod_target_xcconfig = {
       'SWIFT_VERSION' => '4.0'
   }
-  s.dependency "Socket.IO-Client-Swift", '~> 13.1.3'
+  #s.dependency "Socket.IO-Client-Swift", '~> 13.1.3'
 
 end

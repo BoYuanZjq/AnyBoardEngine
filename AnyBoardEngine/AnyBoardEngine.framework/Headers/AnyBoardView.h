@@ -40,6 +40,8 @@ typedef NS_ENUM(NSInteger, JQDrawingType) {
 - (void)onBoardAddScuess;
 //文档删除了一页
 - (void)onBoardDeleteScuess;
+//文档销毁了
+- (void)onBoardDestoryScuess;
 @end
 
 
@@ -87,7 +89,8 @@ typedef NS_ENUM(NSInteger, JQDrawingType) {
 - (void)addBoardBack:(NSString*)imageUrl;
 //删除当前页
 - (BOOL)deleteCurrentBoard;
-//断开链接
-- (void)boardDestory;
-
+//销毁画板（主持人），其他端会收到画板被摧毁的回调
+- (void)destroyBoard;
+//离开画板
+- (void)leaveBoard;
 @end
