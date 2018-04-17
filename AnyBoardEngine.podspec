@@ -80,7 +80,7 @@ Pod::Spec.new do |s|
   #  Supports git, hg, bzr, svn and HTTP.
   #
 
-  s.source       = { :git => "https://github.com/BoYuanZjq/AnyBoardEngine.git", :tag => "#{s.version}" ,:commit => "8693c52cec45d6bf53008e3cced41df99def700b"}
+  s.source       = { :git => "https://github.com/BoYuanZjq/AnyBoardEngine.git", :tag => "#{s.version}" ,:commit => "1dbead2d1dd4b0b8db49f21adcef3599d664b8f3"}
 
 
   # ――― Source Code ―――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――― #
@@ -130,9 +130,9 @@ Pod::Spec.new do |s|
   #  where they will only apply to your library. If you depend on other Podspecs
   #  you can include multiple dependencies to ensure it works.
 
-  # s.requires_arc = true
+  s.requires_arc = true
 
   # s.xcconfig = { "HEADER_SEARCH_PATHS" => "$(SDKROOT)/usr/include/libxml2" }
-  s.dependency "Socket.IO-Client-Swift"
+  #s.dependency "Socket.IO-Client-Swift", '~> 13.1.3'
 
 end
