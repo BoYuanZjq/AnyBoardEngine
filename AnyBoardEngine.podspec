@@ -16,7 +16,7 @@ Pod::Spec.new do |s|
   #
 
   s.name         = "AnyBoardEngine"
-  s.version      = "0.0.1"
+  s.version      = "0.0.2"
   s.summary      = "文档共享SDK,AnyBoardEngine."
 
   # This description is used to generate tags and improve search results.
@@ -80,7 +80,9 @@ Pod::Spec.new do |s|
   #  Supports git, hg, bzr, svn and HTTP.
   #
 
-  s.source       = { :git => "https://github.com/BoYuanZjq/AnyBoardEngine.git", :tag => "#{s.version}" ,:commit => "1dbead2d1dd4b0b8db49f21adcef3599d664b8f3"}
+  s.source       = { :git => "https://github.com/BoYuanZjq/AnyBoardEngine.git", 
+                     :tag => "#{s.version}" ,
+                     :submodules => true}
 
 
   # ――― Source Code ―――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――― #
@@ -132,7 +134,10 @@ Pod::Spec.new do |s|
 
   s.requires_arc = true
 
-  # s.xcconfig = { "HEADER_SEARCH_PATHS" => "$(SDKROOT)/usr/include/libxml2" }
-  #s.dependency "Socket.IO-Client-Swift", '~> 13.1.3'
+  #s.xcconfig = { "HEADER_SEARCH_PATHS" => "$(SDKROOT)/usr/include/libxml2" }
+  s.pod_target_xcconfig = {
+      'SWIFT_VERSION' => '4.0'
+  }
+  s.dependency "Socket.IO-Client-Swift", '~> 13.1.3'
 
 end
