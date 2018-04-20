@@ -97,7 +97,7 @@ Pod::Spec.new do |s|
   #s.exclude_files = "Classes/Exclude"
 
   s.public_header_files = "AnyBoardEngine/**/*.{h}"
-
+  s.vendored_frameworks  = "AnyBoardEngine/**/*.framework"
 
   # ――― Resources ―――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――― #
   #
@@ -135,9 +135,9 @@ Pod::Spec.new do |s|
   s.requires_arc = true
 
   #s.xcconfig = { "HEADER_SEARCH_PATHS" => "$(SDKROOT)/usr/include/libxml2" }
-  s.pod_target_xcconfig = {
-      'SWIFT_VERSION' => '4.0'
-  }
+  #s.pod_target_xcconfig = {
+  #   'SWIFT_VERSION' => '4.0'
+  #}
   #s.dependency "Socket.IO-Client-Swift", '~> 13.1.3'
 
 end
