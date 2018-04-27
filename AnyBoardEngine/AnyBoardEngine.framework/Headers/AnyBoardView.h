@@ -31,9 +31,9 @@ typedef NS_ENUM(NSInteger, JQDrawingType) {
 //文档初始化失败
 - (void)initBoardFaild:(int)nCode;
 //文档共享主持人翻到了那一页
-- (void)anyBoardPageChange:(int)currentPage withTotalPage:(int)totalPage;
+- (void)anyBoardPageChange:(int)currentPage withTotalPage:(int)totalPage withImageUrl:(NSString*)imageUrl;
 //自己翻页页码变化回调
-- (void)anyBoardPageChangeByMe:(int)currentPage withTotalPage:(int)totalPage;
+- (void)anyBoardPageChangeByMe:(int)currentPage withTotalPage:(int)totalPage withImageUrl:(NSString*)imageUrl;
 //文档是否可编辑
 - (void)onBoardEditable:(BOOL)editable;
 //文档添加了一页
