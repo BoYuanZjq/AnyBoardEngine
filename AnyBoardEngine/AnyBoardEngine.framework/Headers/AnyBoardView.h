@@ -11,6 +11,7 @@
 
 typedef NS_ENUM(NSInteger,BoardErrorCode) {
     InitBoardParameterEmpty = 3000,//初始化参数为空
+    InitBoardNoNet = 3001,         //初始化无网络
     SessionPastDue = 201,         //session过期
     DeveloperInfoError = 202,     //开发者信息错误
     DeveloperArrearage = 203,      //欠费
@@ -30,6 +31,8 @@ typedef NS_ENUM(NSInteger, JQDrawingType) {
 - (void)initBoardScuess;
 //文档初始化失败
 - (void)initBoardFaild:(int)nCode;
+//服务断开链接（可能网络原因）
+- (void)anyBoardServerDisconnect;
 //文档共享主持人翻到了那一页
 - (void)anyBoardPageChange:(int)currentPage withTotalPage:(int)totalPage withImageUrl:(NSString*)imageUrl;
 //自己翻页页码变化回调
