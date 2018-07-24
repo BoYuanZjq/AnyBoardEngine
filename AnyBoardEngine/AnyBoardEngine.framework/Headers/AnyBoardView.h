@@ -39,6 +39,8 @@ typedef NS_ENUM(NSInteger, JQDrawingType) {
 - (void)anyBoardPageChangeByMe:(int)currentPage withTotalPage:(int)totalPage withImageUrl:(NSString*)imageUrl;
 //文档是否可编辑
 - (void)onBoardEditable:(BOOL)editable;
+//操作文档出错 0:未登录；1:禁画
+- (void)onBoardOperationFaile:(int)code;
 //文档添加了一页
 - (void)onBoardAddScuess;
 //文档删除了一页
