@@ -16,7 +16,7 @@ typedef NS_ENUM(NSInteger,BoardErrorCode) {
     DeveloperInfoError = 202,     //开发者信息错误
     DeveloperArrearage = 203,      //欠费
     DeveloperDidNotOpenFunction = 206,    //用户未开通该功能
-    DeveloperServerDatabaseError = 301 //数据库是吧
+    DeveloperServerDatabaseError = 301 //数据库异常
     
 };
 
