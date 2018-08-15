@@ -138,7 +138,7 @@ Pod::Spec.new do |s|
   # s.pod_target_xcconfig = {
   #    'SWIFT_VERSION' => '4.1'
   # }
-  s.dependency "Socket.IO-Client-Swift", '~> 13.3.3'
+  s.dependency "Socket.IO-Client-Swift", '~> 13.3.0'
   s.dependency "SDWebImage", '~> 4.4.2'
 
 end
