@@ -17,7 +17,7 @@
 
  @param frame 画板坐标
  @param option 配置项
- @param urlArray 图片数组
+ @param urlArray 图片地址数组；如果要求白板没有背景，可以在此设置为nil
  @param delegate 代理
  @return 画板对象
  */
@@ -40,6 +40,8 @@
 - (BOOL)goSpecifiedPage:(int)pageNum;
 // 获取当前页
 - (int)getCurrentPage;
+//更改当前画板图片
+- (void)changeCurrentBackGroundImage:(NSString*)imageUrl;
 // 设置画板别人是否可以编辑(主持人)，其他端会有相应的回调
 - (void)setOtherBoardCanEdit:(BOOL)canEdit;
 // 设置自己的画板是否可以编辑

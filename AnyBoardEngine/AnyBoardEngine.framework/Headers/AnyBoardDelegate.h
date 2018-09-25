@@ -35,6 +35,8 @@ typedef NS_ENUM(NSInteger, JQDrawingType) {
 - (void)initBoardFaild:(int)nCode;
 //服务断开链接（可能网络原因）
 - (void)anyBoardServerDisconnect;
+//背景更改
+- (void)anyBoardBgChange:(int)currentPage withTotalPage:(int)totalPage withImageUrl:(NSString*)imageUrl;
 //文档共享主持人翻到了那一页
 - (void)anyBoardPageChange:(int)currentPage withTotalPage:(int)totalPage withImageUrl:(NSString*)imageUrl;
 //自己翻页页码变化回调

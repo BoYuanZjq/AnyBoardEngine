@@ -16,7 +16,7 @@
  
  @param frame 画板坐标
  @param option 配置项
- @param urlArray 图片地址数组
+ @param urlArray 图片地址数组；如果要求白板没有背景，可以在此设置为nil
  @param delegate 代理
  @return 画板对象
  */
@@ -47,8 +47,10 @@
 - (BOOL)setMyBoardCanEdit:(BOOL)canEdit;
 //撤销当前页最后一笔
 - (BOOL)removeLastStroke;
-//清空当前白板所有画笔
+//清空当前白板所有画笔（主持人）
 - (BOOL)clearBoard;
+//更改当前画板图片
+- (void)changeCurrentBackGroundImage:(NSString*)imageUrl;
 //当前页前面插入一页
 - (void)addBoardFont:(NSString*)imageUrl;
 //当前页后面插入一页
