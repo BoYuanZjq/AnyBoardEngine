@@ -16,7 +16,7 @@
  
  @param frame 画板坐标
  @param option 配置项
- @param urlArray 图片地址数组；如果要求白板没有背景，可以在此设置为nil
+ @param urlArray 图片地址数组
  @param delegate 代理
  @return 画板对象
  */
